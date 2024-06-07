@@ -1,0 +1,14 @@
+{
+  "files": {
+    "main.css": "/Mac7ota/Toolz-Login/static/css/main.4731bf07.css",
+    "main.js": "/Mac7ota/Toolz-Login/static/js/main.558c13fe.js",
+    "static/media/backgroundsignin.jpg": "/Mac7ota/Toolz-Login/static/media/backgroundsignin.c843f761e55acfd0b54a.jpg",
+    "index.html": "/Mac7ota/Toolz-Login/index.html",
+    "main.4731bf07.css.map": "/Mac7ota/Toolz-Login/static/css/main.4731bf07.css.map",
+    "main.558c13fe.js.map": "/Mac7ota/Toolz-Login/static/js/main.558c13fe.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.4731bf07.css",
+    "static/js/main.558c13fe.js"
+  ]
+}
