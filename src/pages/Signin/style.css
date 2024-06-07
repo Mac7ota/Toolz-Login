@@ -1,0 +1,440 @@
+.containerSingnin {
+    display: flex;
+    height: 100vh;
+    width: 100vw;
+}
+
+@keyframes moveBackground {
+    0% {
+        background-position: 0% 0%;
+    }
+    100% {
+        background-position: 100% 100%;
+    }
+}
+
+
+.containerLeft {
+    background: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.9)), url('../../img/backgroundsignin.jpg');
+    background-size: cover; /* Increase the size of the background image */
+    animation: moveBackground 90s linear infinite; /* Add this */
+    overflow: hidden;
+    padding: 30px 40px;
+    width: 65%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+    > div:nth-child(1){
+        height: 70%;
+        width: 100%;
+    }
+
+    > div:nth-child(2){
+        height: 30%;
+        width: 100%;
+        > div:nth-child(1){
+            height: 50%;
+            width: 100%;
+
+            > div:nth-child(1) {
+                background-color: #0761E2;
+                border-radius: 20px;
+                width: 60px;
+                height: 25px;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                margin-bottom: 15px;
+                }
+                p{
+                    position: relative;
+                    top: 1px;
+                    color: #fff;
+                    font-family: Roboto;
+                    font-size: 12px;
+            } 
+
+            > h3:nth-child(2){
+                font-family: Roboto;
+                color: #fff;
+                font-weight: 400;
+                margin-bottom: 15px;
+            }
+
+            >span:nth-child(3){
+                color: #fff;
+                font-size: 14px;
+                font-family: Roboto;
+                letter-spacing: 1px;
+                font-weight: 0;
+                opacity: 0.7;
+            }
+        }
+
+        >div:nth-child(2){
+            height: 50%;
+            width: 100%;
+        }
+
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.containerRigth {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 35%;
+    padding: 20px 40px;
+}
+
+.containerActionsSocialNetwork {
+    height: 45%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+
+    >div:nth-child(1) {
+        width: 100%;
+        height: 30%;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+
+        >div:nth-child(1) {
+            display: flex;
+            height: 100%;
+            align-items: center;
+
+            >div:nth-child(1) {
+                cursor: pointer;
+                background-color: #000;
+                padding: 2.7px 3.5px;
+                border: 2px solid #0761E2;
+                border-radius: 3px;
+                margin: 0px 10px 0px 0px;
+
+                >p:nth-child(1) {
+                    color: #fff;
+                    font-weight: 600;
+                    font-size: 16px;
+                    font-family: Roboto;
+                }
+            }
+
+            >p:nth-child(2) {
+                font-weight: 600;
+                font-size: 23px;
+                color: #000000;
+                font-family: Roboto;
+            }
+
+            >p:nth-child(3) {
+                position: relative;
+                bottom: 4px;
+                font-size: 12px;
+            }
+        }
+
+        >a:nth-child(2) {
+            text-decoration: none;
+            font-family: Roboto;
+            letter-spacing: 0.5px;
+            color: #0761E2;
+            font-weight: 500;
+            cursor: pointer;
+            margin-right: 10px;
+        }
+    }
+
+
+    >div:nth-child(2) {
+        width: 100%;
+        height: 70%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+
+        >div:nth-child(1) {
+            width: 100%;
+            height: 40%;
+            display: flex;
+            flex-direction: column;
+
+            >h3:nth-child(1) {
+                font-family: Roboto;
+                color: #000000;
+                font-size: 28px;
+                margin-bottom: 20px;
+            }
+
+            >p:nth-child(2) {
+                font-family: Roboto;
+                color: #000000;
+                font-size: 14px;
+            }
+        }
+
+        >div:nth-child(2) {
+            width: 100%;
+            height: 40%;
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            justify-content: space-between;
+
+            >div {
+                cursor: pointer;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                height: 40px;
+                width: 23%;
+                border-radius: 5px;
+                border: 1px solid #000000;
+            }
+        }
+
+        >div:nth-child(3) {
+            width: 100%;
+            height: 10%;
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            align-items: center;
+
+            >div {
+                width: 45%;
+                border: 1px solid #000000;
+                opacity: 0.1;
+            }
+
+            >p {
+                font-family: Roboto;
+                color: #000000;
+                font-size: 14px;
+            }
+        }
+    }
+}
+
+
+.containerFormLogin {
+    display: flex;
+    width: 100%;
+    height: 55%;
+    flex-direction: column;
+
+    >label {
+        font-family: Roboto;
+        font-size: 14px;
+        margin-bottom: 7px;
+    }
+
+    >label:nth-child(1) {
+        order: 1;
+    }
+
+    >div:nth-child(2){
+        order: 2;
+    }
+
+    >label:nth-child(3) {
+        order: 3;
+    }
+
+    >div:nth-child(4){
+        order: 4;
+    }
+
+    >div:nth-child(2),
+    >div:nth-child(4) {
+        display: flex;
+        align-items: center;
+        width: 100%;
+        border: 1px solid #6A6A6A;
+        padding: 10px 0px;
+        border-radius: 5px;
+        margin-bottom: 20px;
+
+        >svg {
+            margin: 0px 10px 0px 10px;
+        }
+
+        >input:focus {
+            border: none;
+            outline: none;
+        }
+
+        >input {
+            width: 90%;
+            border: none;
+        }
+    }
+
+    >div:nth-child(5) {
+        order: 5;
+        margin: 0px 0px 50px 0px;
+
+        /* Esconde o checkbox original */
+        input[type="checkbox"] {
+            display: none;
+        }
+
+        label {
+            font-size: 14px;
+        }
+
+
+        /* Cria um novo checkbox */
+        input[type="checkbox"]+label {
+            position: relative;
+            font-family: Roboto;
+            padding-left: 25px;
+            cursor: pointer;
+            display: inline-block;
+            color: #000000;
+        }
+
+        input[type="checkbox"]+label:before {
+            content: "";
+            display: inline-block;
+            width: 15px;
+            /* Ajuste o tamanho aqui */
+            height: 15px;
+            /* Ajuste o tamanho aqui */
+            border: 1px solid #000000;
+            /* Ajuste a borda aqui */
+            position: absolute;
+            border-radius: 3px;
+            left: 0;
+            bottom: 1px;
+            background-color: #fff;
+        }
+
+        /* Estilo para o checkbox quando está marcado */
+        input[type="checkbox"]:checked+label:before {
+            background-color: #000000;
+        }
+    }
+
+    >div:nth-child(7) {
+        order: 6;
+        display: flex;
+        align-content: center;
+        justify-content: center;
+        width: 100%;
+      >button {
+        width: 100%;
+        cursor: pointer;
+        border: none;
+        padding: 9px 0px 14px 0px;
+        border-radius: 5px;
+        font-size: 14px;
+        color: #fff;
+        font-family: Roboto;
+        background-color: #0761E2;
+    }
+
+    .itemBoxArrow {
+        position: relative;
+        top: 4px;
+        margin-right: 5px;
+    }
+    }
+
+    >div:nth-child(8) {
+        order: 7;
+        margin-top: 40px;
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+
+        >p {
+            font-family: Roboto;
+            font-size: 14px;
+        }
+
+        >p:first-child {
+            opacity: 0.8;
+            color: #000000;
+        }
+
+        >p:last-child {
+            color: #0761E2;
+            margin-left: 5px;
+            cursor: pointer;
+        }
+
+    }
+
+}
+
+
+
+@media screen and (max-width: 728px) {
+    .containerLeft {
+        width: 0%;
+        display: none;
+    }
+
+    .containerRigth {
+        width: 100%;
+    }
+
+    .containerFormLogin {         
+        >div:nth-child(5) {
+            order: 6;
+            margin: 40px 0px 0px 0px;
+        } 
+        >div:nth-child(7) {
+            order: 5;
+        }   
+    }
+
+}
